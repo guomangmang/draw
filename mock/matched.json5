@@ -1,0 +1,24 @@
+{
+  "status": 0,
+  "message": "信息错误",
+  'data': {
+            "total|1-10": 10,
+            "pages|1-10": 10,
+            "current_per_page|1-10": 10,
+            "item_per_page|1-10": 10,
+            "data|1-90":[
+              {
+                'id|+1': 1,
+                "date": "@date()",//随机生成日期
+                "batch|1-10": 10,
+                "formulation": "B-2002_Q",
+                "set_temp|1-100":100,
+                "set_time":'@time("HH:mm")',
+                "max_mooney|1-100.1-10": 1,
+                "lm|1-100.1-10":1,
+                "retest":"@boolean",
+                "operator": "@cname()",//随机生成中文名字
+              }
+            ]
+        }
+}
